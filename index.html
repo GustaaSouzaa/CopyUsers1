@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Pesquisa de originalidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pesquisa de originalidade</h1>
+  <form action="/resultado" method="post">
+    <input type="text" name="numero_de_entrada" placeholder="Número de entrada">
+    <input type="text" name="total_itens" placeholder="Total de itens">
+    <input type="checkbox" name="Original" value="1"> Original
+    <input type="checkbox" name="Re-creation" value="1"> Re-creation
+    <input type="checkbox" name="Inpersonation" value="1"> Inpersonation
+    <input type="checkbox" name="High Vertical/Middle/Random" value="1"> High Vertical/Middle/Random
+    <input type="submit" value="Calcular">
+  </form>
+  <div id="resultado"></div>
+</body>
+</html>
