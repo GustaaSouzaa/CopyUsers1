@@ -21,13 +21,18 @@
 
       // Exibindo o resultado na tela
       document.querySelector("p").innerHTML = `Para o número ${numero_de_entrada} em um total de ${total_itens}, o resultado da pesquisa é ${resultado}%.`;
+      
+      // Impedir o envio do formulário
+      event.preventDefault();
     }
   </script>
 
-  <form action="/resultado" method="GET">
+  <form onsubmit="calcular();">
     <input type="text" name="numero_de_entrada" placeholder="Número de entrada">
     <input type="text" name="total_itens" placeholder="Total de itens">
     <input type="submit" value="Calcular">
   </form>
+
+  <p></p>
 </body>
 </html>
