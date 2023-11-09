@@ -15,7 +15,4 @@ function calcular() {
   // Exibindo o resultado na tela
   let popUp = window.open("", "Resultado", "width=300,height=200");
   popUp.document.body.innerHTML = `Para o número ${numero_de_entrada} em um total de ${total_itens}, o resultado da pesquisa é ${resultado}%.`;
-}
-
-// Adicionando o evento de clique no botão "Calcular"
-document.querySelector("input[type='submit']").addEventListener("click", calcular);
+  popUp.focus();
